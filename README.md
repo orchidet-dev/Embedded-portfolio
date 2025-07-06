@@ -3,7 +3,7 @@
 Bienvenue dans ce dépôt contenant mes projets embarqués sur différentes plateformes :
 
 - 🔷 **STM32L476RG Nucleo-64**
-- 🔷 **ESP32S3 (WikiKit32)**
+- 🔷 **ESP32S3 (WifiKit32)**
 - 🔷 **Arduino Mega 2560**
 - 🔷 **STM32L475RG Discovery IoT (B-L475E-IOT01A)**
 
@@ -15,7 +15,7 @@ Tous les projets sont développés avec **PlatformIO sous VS Code**, et organis�
 ## 🧰 Environnement de développement
 
 - 🖥️ **IDE** : Visual Studio Code + PlatformIO  
-- 🛠️ **Langages** : C / C++ (CMSIS, ESP-IDF, Arduino Core selon carte)  
+- 🛠️ **Langages** : C / C++, Python(scripting) (CMSIS, ESP-IDF, Arduino Core selon carte)  
 - 📦 **Build system** : PlatformIO  
 - 📚 **Librairies utilisées** : CMSIS, Arduino, ESP-IDF, FreeRTOS
 
@@ -50,7 +50,7 @@ STM32L476RG-NUCLEO/
 └── lora_sensor_node/        # Noeud capteur LoRa simulé
 
 
-## 📘 ESP32S3 (WikiKit32)
+## 📘 ESP32S3 (WifiKit32)
 
 | Projet              | Description |
 |---------------------|-------------|
@@ -62,8 +62,8 @@ STM32L476RG-NUCLEO/
 | `ble_uart`          | Communication BLE ↔ téléphone |
 | `lowpower_logger`   | Envoi périodique de données avec deep sleep |
 
-📁 Dossier : `ESP32S3-WikiKit32/`
-ESP32S3-WikiKit32/
+📁 Dossier : `ESP32S3-WifiKit32/`
+ESP32S3-WifiKit32/
 ├── platformio.ini           # Config ESP32S3
 ├── wifi_scan/               # Scan des réseaux Wi-Fi
 ├── web_dashboard/           # Dashboard Web embarqué
