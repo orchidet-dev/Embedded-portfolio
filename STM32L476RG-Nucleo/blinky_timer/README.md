@@ -3,8 +3,8 @@
 Ce projet illustre l'utilisation du **Timer2** du STM32L476RG pour générer :
 
 - ✅ un **clignotement précis** de deux LEDs (PA5 et PB5)
-- ✅ des **fonctions de délai non bloquant** en microsecondes et millisecondes
-- ✅ une **interruption toutes les 1 ms** pour exécuter une action périodique
+- ✅ des **fonctions de délai bloquant** en microsecondes et millisecondes
+- ✅ une **interruption toutes les 65ms** pour exécuter une action périodique
 
 ---
 
