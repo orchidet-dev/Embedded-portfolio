@@ -87,15 +87,11 @@ void Timer2_Delay_us(uint32_t us) {
  * Typical uses include toggling an LED or incrementing a counter.
  */
 void TIM2_IRQHandler(void){
-    //I don't have a specific action here, but you can implement it as needed.
-    //You can toggle an LED periodically or perform other actions.
-    //It's a good place to handle periodic tasks.
-    //This is not a blocking function, so it should be quick to execute.
-    // Check if the update interrupt flag is set
     if (TIM2->SR & TIM_SR_UIF) {
         // Clear the update interrupt flag
         TIM2->SR &= ~TIM_SR_UIF;
         // Add your interrupt handling code here
+        GPIO_TogglePin(GPIOB, LED_PIN_PB5); // Toggle the LED connected to PA5
     }
 }
 

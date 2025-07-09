@@ -1,4 +1,19 @@
-#include <stdint.h>
+/*
+* @file main.c
+ * @brief Main application file for blinking an LED using Timer2 on STM32L476RG Nucleo board.
+ * This code initializes the system clock, GPIO for the LED, and Timer2 for generating delays.
+ *
+ * @note This code is designed to run on the STM32L476RG Nucleo board.
+ *       Ensure that the necessary libraries and configurations are set up correctly.
+ *
+ * @date july 2025
+ * @author Orchidet
+ * @version 1.0
+
+*/
+
+// File: src/main.c
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +44,6 @@ int main(void) {
         //Timer2_Delay_ms(100); // Delay for 100 milliseconds
         Timer2_Delay_us(100000); // Delay for 100 milliseconds
         GPIO_TogglePin(GPIOA, LED_PIN_PA5); // Toggle the LED connected to PA5
-        GPIO_TogglePin(GPIOB, LED_PIN_PB5); // Toggle the LED connected to PA5
     }
 
     return 0;
