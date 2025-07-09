@@ -133,11 +133,11 @@ pio run --target upload
 # Monitor série
 pio device monitor
 
-## Utilisation avec Docker
+## Utilisation avec Docker 🐳
 
 Ce dépôt contient plusieurs projets embarqués STM32. Pour faciliter la compilation, le flash et le debug, un environnement Docker est fourni. Cela permet de garantir un environnement de développement cohérent et portable, sans nécessiter d'installation locale complexe.
 
-### Pré-requis
+### Pré-requis 🔧
 
 - [Docker](https://docs.docker.com/get-docker/) installé sur votre machine.
 - Un clone du dépôt (via `git clone`).
