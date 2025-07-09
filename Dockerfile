@@ -4,7 +4,7 @@ FROM python:3.10-slim
 RUN apt-get update && apt-get install -y \
     git \
     build-essential \
-    libusb-1.0-0-dev \
+    libusb-1.0-0\
     && pip install platformio \
     && apt-get clean 
 
