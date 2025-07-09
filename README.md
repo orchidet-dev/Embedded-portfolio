@@ -132,3 +132,37 @@ pio run --target upload
 
 # Monitor série
 pio device monitor
+
+## Utilisation avec Docker
+
+Ce dépôt contient plusieurs projets embarqués STM32. Pour faciliter la compilation, le flash et le debug, un environnement Docker est fourni. Cela permet de garantir un environnement de développement cohérent et portable, sans nécessiter d'installation locale complexe.
+
+### Pré-requis
+
+- [Docker](https://docs.docker.com/get-docker/) installé sur votre machine.
+- Un clone du dépôt (via `git clone`).
+
+### Construction de l'image Docker
+
+Depuis la racine du dépôt (là où se trouve le `Dockerfile`), lancez :
+
+```bash
+docker build -t embedded_pio .
+
+Compilation d’un projet
+Pour compiler un projet spécifique, utilisez la commande suivante depuis la racine du dépôt :
+
+docker run --rm -it \
+  -v "$(pwd):/home/devuser/project" \
+  -w /home/devuser/project/<chemin_vers_projet> \
+  embedded_pio
+
+Par exemple, pour compiler le projet blinky_timer :
+
+docker run --rm -it \
+  -v "$(pwd):/home/devuser/project" \
+  -w /home/devuser/project/STM32L476RG-NUCLEO/blinky_timer \
+  embedded_pio
+
+Sous Linux, vous pouvez ajouter l’option --device pour accéder au port USB, par exemple :
+--device /dev/ttyACM0
