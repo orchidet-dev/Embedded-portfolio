@@ -58,7 +58,7 @@ Tous les projets sont développés avec **PlatformIO sous VS Code**, et organis�
 
 Tous les projets sont développés sous PlatformIO.
 
-# Pre-réquis pour STM32L476RG - Installation sur PC
+### Pre-réquis pour STM32L476RG - Installation sur PC
 
 1. **OpenOCD** – outil de flash/debug pour ST-Link  
 2. **Pilote ST-Link**  
