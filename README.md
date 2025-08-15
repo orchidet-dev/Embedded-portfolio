@@ -24,7 +24,7 @@ Tous les projets sont développés avec **PlatformIO sous VS Code**, et organis�
 ## 📘 STM32L476RG (Nucleo-64)
 
 | Projet               | Description |
-|---------------------Projet_name/             # Dossier projet-|-------------|
+|----------------------|-------------|
 | `blinky_timer`       | Clignotement LED avec timer (CMSIS) |
 | `adc_read`           | Lecture analogique       
 
