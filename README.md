@@ -25,7 +25,7 @@ Tous les projets sont développés avec **PlatformIO sous VS Code**, et organis�
 
 | Projet               | Description |
 |----------------------|-------------|
-| `blinky_timer`       | Clignotement LED avec timer (CMSIS) |
+| `blinky_timer`       | Clignotement LED avec timer 2|
 | `adc_read`           | Lecture analogique       
 
 
