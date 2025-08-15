@@ -56,7 +56,13 @@ Tous les projets sont développés avec **PlatformIO sous VS Code**, et organis�
 
 ## 🔧 Compilation & Flash
 
-Tous les projets sont compatibles avec PlatformIO.
+Tous les projets sont développés sous PlatformIO.
+#Pre-réquis pour STM32L476RG - Installation sur PC
+1. **OpenOCD** – outil de flash/debug pour ST-Link  
+2. **Pilote ST-Link**  
+   - Windows : [STSW-LINK009 (driver)](https://www.st.com/en/development-tools/stsw-link009.html)  
+3. **Toolchain ARM GCC** – `arm-none-eabi-gcc` + `arm-none-eabi-gdb`  
+
 
 ```bash
 # Compilation
