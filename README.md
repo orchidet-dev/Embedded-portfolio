@@ -1,4 +1,4 @@
-# 🧠 Embedded-Portfolio
+# 🧠 Embedded-Projects
 
 Bienvenue dans ce dépôt contenant mes projets embarqués sur différentes plateformes :
 
